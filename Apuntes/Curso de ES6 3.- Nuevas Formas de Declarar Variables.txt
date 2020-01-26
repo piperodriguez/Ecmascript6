@@ -1,4 +1,26 @@
  aprenderemos de las nuevas palabras const y
  let que nos permitir declarar variables de una forma diferente.
 
+
+ VAR -> permite redeclarar variables
+
+
+/**Declaracion de variables */
+//mala practica logica permitir redeclarar el valor de la variable
+
+var sexo = "Hombre";
+var sexo = "Femenino";
+
+console.log("tu sexo es "+sexo);
+
+//remplza el valor original
+
+
+
+
+ LET -> variable que sirve dentro de un bloque
+ si quiere poder modificar el valor usa let
  
+ CONST -> es la que mas se utiliza
+ las constantes solo se puden leer mas no modificar
+
