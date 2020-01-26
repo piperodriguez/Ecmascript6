@@ -1,0 +1,4 @@
+ aprenderemos de las nuevas palabras const y
+ let que nos permitir declarar variables de una forma diferente.
+
+ 

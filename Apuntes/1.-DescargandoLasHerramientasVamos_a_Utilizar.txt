@@ -1,0 +1,100 @@
+Con esta herramienta se puede Comparar la compatibilidad que tienen los navegadores
+Con diferentes caracteristicas , propiedades ,elementos de html, css y js
+
+https://caniuse.com/
+
+
+Como ecmascript 6 es una nueva manera de escribir javascriot de una manera mas sencilla
+legible y corta es compatible con ciertos navegadores como chrome, firefox, safari, opera,
+pero para que sea compatible con todos los navegadores hay que convertir el cod que se
+escribe en ECMASCRIPT6 a javascript nativo por medio de ciertas herramientas.
+
+
+1) Babel : https://babeljs.io/
+permite compilas codigo es6 a cod javascript nativo
+
+Instalaciòn al proyecto : por medio de un gestor de paquetes
+NPM
+
+para poder utilizar ese gestor de paquetes tenemos que instalar NodeJS
+que va a ser el encargado de ejecutar el back-end del proyecto.
+
+
+tambien tener instalado git
+
+
+///CONVERTIR CODIGO ES6 A JAVASCRIPT///
+--Para resolver el problema de compatibilidad de compilacion de cod ecmascript a cualquier navegador,
+
+
+Instalaciòn de BABEL por medio de NPM
+
+la estructura de un projecto en es6 consta de dos folders output y src
+
+instalamos BABEL 
+
+https://babeljs.io/docs/en/
+
+En la raiz del projecto crear el archivo package,json
+y ponemos
+
+{}
+
+nos ubicamos en el projecto
+
+Running these commands to install the packages:
+
+npm install --save-dev @babel/core @babel/cli @babel/preset-env
+
+solo ejecute el de arriba
+
+npm install --save @babel/polyfill
+
+
+en pacjache.json
+
+creamos un objeto que se llama scripts
+
+hay definimos comanods para que los podamos ejecutar
+	
+ "scripts":{
+  	"build": "babel src -d output"
+  }
+
+
+
+  para ejecutarlo
+
+  npm run build	
+
+
+
+  configurar babel para transformar el codigo 
+  en la carpeta src escribimos nuestro codigo es6
+  en output babel nos va a transformar nuestro codigo a javascript nativo
+
+
+  Create .babelrc configuration file
+
+  .babelrc
+
+  este es el archivo de configuracion de babel
+
+  {
+  "presets": ["@babel/preset-env"]
+}
+
+
+ya despues ejecutamos
+
+npm run build
+
+listo ya transformamos el codigo
+
+
+
+  npm install @babel/preset-env --save-dev		
+
+
+
+
