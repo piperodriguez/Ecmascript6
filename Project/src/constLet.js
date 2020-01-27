@@ -38,6 +38,6 @@ let edad = 18;
 
 if (edad >= 18) {
     let requisitoEdad = true;
-    console.log(`La persona es mayor de edad ${requisitoEdad}`);
+    console.log(`La persona es mayor de edad ${requisitoEdad}`);    
 }
 
