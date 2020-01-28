@@ -96,5 +96,30 @@ listo ya transformamos el codigo
   npm install @babel/preset-env --save-dev		
 
 
+/*repaso del video 2 instalación de babel*/
 
+la estructura de un projecto
+src
+output
 
+1) en la carpeta del proyecto creamos un index.html
+2) dentro de src -> creamos un js donde va el cod es6
+3) instalacion de babel
+
+package.json -> sirve para nodejs -> como el composer.json en php jejej
+
+antes de ejecutar creamos en la raiz el archivo -> package.json
+npm install --save-dev @babel/core @babel/cli @babel/preset-env
+
+dentro del archivo creamos un comando 
+
+  "scripts": {
+    "build": "babel src -d output --watch"
+  }
+
+en ese comando especificamos que el codigo que encontremos
+escrito en ecmascritp 6 en la carpeta src no lo comṕile a js nativo
+dentro de la carpeta output
+
+ejecutamos desde la terminal en la ruta del projecto.
+npm run build
